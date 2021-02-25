@@ -6,6 +6,5 @@ public class TestHello {
 		
 		System.out.println("Hello World!");
 
-		
 	}
 }
