@@ -1,4 +1,4 @@
-package ro.ase.cts.csie.laborator3.faza1;
+package ro.ase.csie.cts.laborator3.faza1;
 
 public enum TipProdus {
 	NOU(0),DISCOUNT(0.10f),STOC_LIMITAT(0.25f),VECHI(0.35f);
