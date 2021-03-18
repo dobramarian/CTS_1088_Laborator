@@ -1,6 +1,6 @@
 package ro.ase.csie.cts.laborator3.faza3.servicii;
 
-public class ServiciuMarketing2021 implements InterfataMarketing {
+public class StrategieMarketing2021 implements InterfataMarketing {
 
 	@Override
 	public float getDiscountFidelitate(int vechimeClientInAni) {
