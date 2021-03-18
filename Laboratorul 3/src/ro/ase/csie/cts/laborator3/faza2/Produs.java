@@ -33,33 +33,12 @@ public class Produs {
 		validarePret(pretInitial);
 		validareVechimeClient(vechimeClientInAni);
 		
-	    float pretFinal = 0;
-	    float discountFidelitate = getDiscountFidelitate(vechimeClientInAni);
-	    float discount = 0;
-	    float valoareDiscountTipProdus = 0;
+	    float discountFidelitate = (tipProdus == TipProdus.NOU)? 0 : getDiscountFidelitate(vechimeClientInAni);
 	    
-	    switch(tipProdus) {
-	    case NOU:
-		    pretFinal = pretInitial;	    	
-	    	break;
-	    case DISCOUNT:
-	    	discount = TipProdus.DISCOUNT.getDiscount();
-	    	valoareDiscountTipProdus = getPretCuDiscount(pretInitial,discount);
-		    pretFinal = valoareDiscountTipProdus *(1-discountFidelitate);
-		    break;
-	    case STOC_LIMITAT:
-	    	discount = TipProdus.STOC_LIMITAT.getDiscount();
-	    	valoareDiscountTipProdus = getPretCuDiscount(pretInitial,discount);
-		    pretFinal = valoareDiscountTipProdus *(1-discountFidelitate);
-		    break;
-	    case VECHI:
-	    	discount = TipProdus.VECHI.getDiscount();
-	    	valoareDiscountTipProdus = getPretCuDiscount(pretInitial,discount);
-		    pretFinal = valoareDiscountTipProdus *(1-discountFidelitate);
-		    break;
-		default:
-			throw new UnsupportedOperationException("Un simbol din enumerare nu este procesat.");
-	    }
+    	float discount = TipProdus.NOU.getDiscount();
+    	float valoareDiscountTipProdus = getPretCuDiscount(pretInitial,discount);
+	    float pretFinal = valoareDiscountTipProdus *(1-discountFidelitate);
+	    
 		return pretFinal;
 	  }
 
