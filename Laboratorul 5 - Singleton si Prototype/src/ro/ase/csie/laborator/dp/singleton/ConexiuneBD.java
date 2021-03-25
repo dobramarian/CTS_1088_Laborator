@@ -19,7 +19,7 @@ public class ConexiuneBD {
 	}
 	
 	//versiune lazy
-	public static ConexiuneBD getConexiune() {
+	public static  ConexiuneBD getConexiune() {
 		if(conexiune == null) {
 			//datele se pot prelua din fisiere de configurare
 			conexiune = new ConexiuneBD("10.0.0.1","cts");
