@@ -5,7 +5,7 @@ public class ConexiuneBD {
 	String ip;
 	String denumire;
 	
-	public static final ConexiuneBD conexiune = null;
+	public static final ConexiuneBD conexiune;
 	
 	static {
 		//preluare date conexiune din alte surse
