@@ -1,4 +1,4 @@
-package ro.ase.cts.laborator.laborator6;
+package ro.ase.cts.laborator.laborator6.builder;
 
 public class SuperErou {
     private String nume;
