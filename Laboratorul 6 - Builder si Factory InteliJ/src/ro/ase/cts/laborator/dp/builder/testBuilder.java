@@ -9,6 +9,8 @@ public class testBuilder {
                 .esteRanit()
                 .setArmaDreapta(new Arma())
                 .build();
+
+        joker.getArmaDreapta().pocPoc();
     }
 
 }

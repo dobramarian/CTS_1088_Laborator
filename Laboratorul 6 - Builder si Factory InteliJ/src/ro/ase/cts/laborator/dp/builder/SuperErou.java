@@ -14,24 +14,38 @@ public class SuperErou {
     private  InterfataSuperPutere superSuperPutere;
 
     private  SuperErou() {
-
     }
 
-    private SuperErou(String nume,
-                     int puncteViata,
-                     boolean esteErouNegativ,
-                     boolean esteRanit, InterfataArma armaStanga,
-                     InterfataArma armaDreapta,
-                     InterfataSuperPutere superPutere,
-                     InterfataSuperPutere superSuperPutere) {
-        this.nume = nume;
-        this.puncteViata = puncteViata;
-        this.esteErouNegativ = esteErouNegativ;
-        this.esteRanit = esteRanit;
-        this.armaStanga = armaStanga;
-        this.armaDreapta = armaDreapta;
-        this.superPutere = superPutere;
-        this.superSuperPutere = superSuperPutere;
+    public String getNume() {
+        return nume;
+    }
+
+    public int getPuncteViata() {
+        return puncteViata;
+    }
+
+    public boolean isEsteErouNegativ() {
+        return esteErouNegativ;
+    }
+
+    public boolean isEsteRanit() {
+        return esteRanit;
+    }
+
+    public InterfataArma getArmaStanga() {
+        return armaStanga;
+    }
+
+    public InterfataArma getArmaDreapta() {
+        return armaDreapta;
+    }
+
+    public InterfataSuperPutere getSuperPutere() {
+        return superPutere;
+    }
+
+    public InterfataSuperPutere getSuperSuperPutere() {
+        return superSuperPutere;
     }
 
     public static class SuperErouBuilder{
